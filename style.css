@@ -3,10 +3,20 @@
   padding: 0;
   font-family: sans-serif;
 }
+
+
+html, body {
+  overflow-x: hidden;
+  max-width: 1920px;
+  min-width: 469px;
+  margin: 0 auto;
+}
+
+
 .banner{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(movie.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/movie.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -127,7 +137,7 @@ button.first-btn:hover {
   background: 
     linear-gradient(to top, rgba(0, 0, 0, 0), #151515),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-    url('deadpoolandwolverine.jpeg');
+    url('images/deadpoolandwolverine.jpeg');
 }
 
 .featured-title {
@@ -159,6 +169,7 @@ button.featured-button:hover {
 
 .movie-list-container {
   padding: 0 30px;
+  margin-right: 5vw;
 }
 
 
@@ -171,13 +182,13 @@ button.featured-button:hover {
 }
 
 .movie-list-item {
-  margin-right: 33px;
+  margin-right: 2vw; 
   position: relative;
 }
 
 .movie-list-item:hover .movie-list-item-img {
-  transform: scale(1.2);
-  margin: 0 30px;
+  transform: scale(1.1);
+  margin: 0 18px;
   opacity: 0.5;
 }
 
@@ -187,20 +198,20 @@ button.featured-button:hover {
 
 .movie-list-item-img {
   transition: all 1s ease-in-out;
-  width: 170px;
-  height: 200px;
+  height: 26.5vh;
+  width: 11.25vw; 
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 2vw; 
 }
 
 .movie-list-item-title {
   background-color: transparent;
-  padding: 0 10px;
-  font-size: 20px;
+  padding: 0 0.5vw; 
+  font-size: 1.2vw; 
   font-weight: bold;
   position: absolute;
-  top: 10%;
-  left: 28px;
+  top: 5%; 
+  left: 2vw;
   opacity: 0;
   transition: 1s all ease-in-out;
 }
@@ -223,7 +234,7 @@ button.featured-button:hover {
   background: 
     linear-gradient(to top, rgba(0, 0, 0, 0), #151515),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-    url('tvshow.webp');
+    url('images/tvshow.webp');
 }
 
 .featured-content3 {
@@ -232,7 +243,7 @@ button.featured-button:hover {
   background: 
     linear-gradient(to top, rgba(0, 0, 0, 0), #151515),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-    url('doc.jpeg');
+    url('images/doc.jpeg');
 }
 
 .featured-content4 {
@@ -241,7 +252,58 @@ button.featured-button:hover {
   background: 
     linear-gradient(to top, rgba(0, 0, 0, 0), #151515),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-    url('anime.jpg');
+    url('images/anime.jpg');
+}
+
+.form-container{
+  padding-top:30px;
+  background-color: rgb(21, 21, 21)
+}
+
+form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 600px; 
+  height: 50px; 
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: block;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #ffa31a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+  background: #ffa31a; 
+  color: white; 
 }
 
 footer{
@@ -311,8 +373,68 @@ footer{
   font-weight: 400;
   margin: 0px 5px;
 }
-@media only screen and (max-width: 940px){
-  .menu-container{
-      display: none;
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 928px) {
+  .navbar{
+    font-size: 10px;
+  }
+  .logo{
+    width: 200px;
+    cursor: pointer;
+    margin-left: -40px;
+  }
+  .banner {
+    background-size: 1500px;
+    height: 800px;
+  }
+  .content h1 {
+    font-size: 50px; 
+  }
+  .content{
+    top:40% 
+  }
+  
+}
+
+@media (max-width: 749px) {
+  .navbar ul li:nth-child(3),
+  .navbar ul li:nth-child(4)
+  {
+    display: none;
+  }
+  .logo{
+    width: 200px;
+    cursor: pointer;
+    margin-left: -40px;
+  }
+  .content h1 {
+    font-size: 40px; 
+    margin-top:10px;
+  }
+  .content{
+    font-size: 12px;
+  }
+  button {
+    width: 150px; 
+    padding: 10px 0; 
+    margin: 20px 5px; 
+    font-size: 0.9em; 
+    border-radius: 20px;  
+  }
+  span {
+    border-radius: 20px;
+  }
+  .banner {
+    background-size: 1400px;
+    height: 730px;
   }
 }
