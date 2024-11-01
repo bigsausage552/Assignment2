@@ -8,7 +8,7 @@
 html, body {
   overflow-x: hidden;
   max-width: 1920px;
-  min-width: 469px;
+  min-width: 412px;
   margin: 0 auto;
 }
 
@@ -198,7 +198,8 @@ button.featured-button:hover {
 
 .movie-list-item-img {
   transition: all 1s ease-in-out;
-  height: 26.5vh;
+  height: auto; 
+  aspect-ratio: 3 / 4; 
   width: 11.25vw; 
   object-fit: cover;
   border-radius: 2vw; 
@@ -218,6 +219,7 @@ button.featured-button:hover {
 
 .movie-list-title {
   text-align: left;
+  font-size: 2em;
 }
 
 .rowdies-bold1 {
@@ -402,6 +404,19 @@ footer{
   .content{
     top:40% 
   }
+  .movie-list-title {
+    font-size: 1.5em;
+  }
+  .rowdies-bold {
+    font-size: 1.5em; 
+  }
+  .movie-list-item-img {
+    width: 13.2vw;
+  }
+
+  .movie-list-item:nth-last-child(1) {
+    display: none;
+  }
   
 }
 
@@ -437,4 +452,110 @@ footer{
     background-size: 1400px;
     height: 730px;
   }
+  .rowdies-bold {
+    font-size: 1.2em; 
+  }
+  .rowdies-bold1 {
+    font-size: 1.2em; 
+  }
+  .featured-button{
+    width: 180px; 
+    padding: 10px 0; 
+    margin: 20px auto; 
+    font-size: 11px; 
+
+  }
+  .footerContainer {
+    padding: 30px 15px 10px;
+  }
+
+  .socialIcons a {
+    padding: 6px;
+    margin: 6px;
+  }
+
+  .socialIcons a i {
+    font-size: 1.5em;
+  }
+
+  .footerNav ul li a {
+    font-size: 1em;
+    margin: 10px;
+  }
+
+  .footerBottom p {
+    font-size: 0.8em;
+  }
+  
 }
+
+@media (max-width: 469px){
+  .navbar{
+    font-size: 6.3px;
+  }
+}
+
+@media (max-width: 1390px){
+  .featured-content {
+    background-position: calc(50% + 15vw) center; 
+  }
+}
+
+@media (max-width: 900px){
+  .featured-content {
+    background-position: calc(50% + 20vw) center; 
+  }
+  .featured-content2 {
+    background-position: calc(50% + 20vw) center;
+  .featured-content3 {
+    background-position: calc(50% + 20vw) center; 
+  }
+  .featured-content4 {
+    background-position: calc(50% + 20vw) center; 
+  }
+}
+}
+
+
+@media (max-width: 666px) {
+  .movie-list-item-img {
+    width: 15.25vw;
+  }
+
+  .movie-list-item:nth-last-child(-n+2) {
+    display: none;
+  }
+  .movie-list{
+    margin-top: -45px; 
+    margin-bottom: -45px;
+  }
+}
+
+@media (max-width: 708px){
+  form {
+    
+    width: 360px; 
+    height: 40px; 
+  }
+  input{
+    height: 35px; 
+    font-size: 0.9em; 
+    border-radius: 15px; 
+    padding: 0 15px; 
+  }
+  .fa {
+    box-sizing: border-box;
+    padding: 8px; 
+    width: 35px; 
+    height: 35px; 
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 636px){
+  .featured-title {
+    width: 80%;
+    margin-right: 25px;
+  }
+}
+
